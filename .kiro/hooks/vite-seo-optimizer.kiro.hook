@@ -1,0 +1,22 @@
+{
+  "enabled": true,
+  "name": "Vite SEO Optimizer",
+  "description": "Automatically implements proper SEO practices for a Vite website including meta tags, structured data, sitemap generation, and performance optimizations",
+  "version": "1",
+  "when": {
+    "type": "userTriggered",
+    "patterns": [
+      "index.html",
+      "src/main.tsx",
+      "src/App.tsx",
+      "src/pages/*.tsx",
+      "src/components/*.tsx",
+      "vite.config.ts",
+      "package.json"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Analyze the current Vite website structure and implement comprehensive SEO optimizations including: 1) Add proper meta tags (title, description, keywords, Open Graph, Twitter Cards) to index.html and dynamic pages, 2) Implement structured data (JSON-LD) for better search engine understanding, 3) Configure Vite for SEO-friendly URLs and routing, 4) Add sitemap generation, 5) Optimize images with proper alt tags and lazy loading, 6) Implement proper heading hierarchy (H1-H6), 7) Add robots.txt optimization, 8) Configure canonical URLs, 9) Implement performance optimizations (code splitting, compression), 10) Add analytics and search console setup. Focus on the modified files and ensure all SEO best practices are properly implemented for this React/Vite application."
+  }
+}
