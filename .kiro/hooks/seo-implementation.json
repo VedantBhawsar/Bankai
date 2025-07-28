@@ -1,0 +1,28 @@
+{
+  "name": "SEO Implementation for Vite Website",
+  "description": "Automatically implements and updates proper SEO metadata when website content changes",
+  "triggers": [
+    {
+      "type": "file_saved",
+      "patterns": [
+        "index.html",
+        "src/pages/*.tsx",
+        "src/components/HeroSection.tsx",
+        "src/components/Header.tsx",
+        "package.json"
+      ]
+    }
+  ],
+  "request": {
+    "message": "Implement comprehensive SEO optimization for this Vite React website. Please:\n\n1. Update the index.html with proper SEO meta tags including:\n   - Descriptive title and meta description based on the app content\n   - Open Graph tags for social media sharing\n   - Twitter Card meta tags\n   - Canonical URL\n   - Structured data (JSON-LD) for the application\n   - Proper viewport and charset settings\n\n2. Create or update a sitemap.xml in the public folder\n\n3. Update robots.txt with proper directives\n\n4. Add SEO-friendly meta tags dynamically in React components where needed\n\n5. Ensure all images have proper alt attributes\n\n6. Optimize page titles and descriptions for search engines\n\n7. Add proper heading hierarchy (h1, h2, h3, etc.)\n\n8. Implement semantic HTML structure\n\n9. Add favicon and app icons if missing\n\n10. Configure Vite for SEO optimization in vite.config.ts\n\nBased on the current content, this appears to be a digital banking/financial app. Optimize SEO accordingly with relevant keywords and descriptions.\n\nAlso, as requested: make the avatar images smaller (reduce from w-12 h-12 to w-10 h-10) and replace the current avatar URLs with images of girls from Unsplash.",
+    "includeContext": [
+      "index.html",
+      "src/components/HeroSection.tsx",
+      "src/components/Header.tsx",
+      "src/pages/Index.tsx",
+      "package.json",
+      "vite.config.ts",
+      "public/robots.txt"
+    ]
+  }
+}
