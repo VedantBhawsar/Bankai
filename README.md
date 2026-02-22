@@ -1,73 +1,163 @@
-# Welcome to your Lovable project
+# Bankai — Modern Digital Banking Landing Page
 
-## Project info
+> **The Next Big Thing In Digital Money Transfer**
 
-**URL**: https://lovable.dev/projects/67bba80b-6ca7-4910-8728-00cdb9e0e21b
+Bankai is a sleek, fully responsive landing page for a modern digital banking and money-transfer application. Built with React, TypeScript, and Tailwind CSS, it showcases the app's core value propositions, walks visitors through getting started, answers common questions, and drives downloads on both iOS and Android.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## ✨ Features
 
-**Use Lovable**
+| Section | Description |
+|---|---|
+| **Hero** | Bold headline, App Store & Google Play CTAs, social proof (4.8 ★ · 10 k+ users) |
+| **Features** | Instant fee-free payments, cash-flow management, no unwanted subscriptions |
+| **How It Works** | 4-step guide — Download → Choose Payment → Make Payment → Get Services |
+| **FAQ** | Accordion-style answers to the most common questions |
+| **Download** | Final CTA section with app-store buttons |
+| **Footer** | About, Pricing, Media, and Contact links |
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/67bba80b-6ca7-4910-8728-00cdb9e0e21b) and start prompting.
+Additional highlights:
 
-Changes made via Lovable will be committed automatically to this repo.
+- 🔒 Secure transaction messaging throughout
+- 📱 Mobile-first, fully responsive layout
+- ⚡ Optimised images with lazy-loading
+- 🔍 SEO-ready — Open Graph, Twitter Cards, JSON-LD structured data, sitemap & robots.txt
+- ♿ Accessible markup (`aria-labelledby`, `role="main"`, semantic HTML)
+- 🎨 Dark-mode–compatible design tokens via CSS variables
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠 Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+| Technology | Version | Purpose |
+|---|---|---|
+| [React](https://react.dev) | 18 | UI library |
+| [TypeScript](https://www.typescriptlang.org) | 5 | Type safety |
+| [Vite](https://vitejs.dev) | 5 | Build tool & dev server |
+| [Tailwind CSS](https://tailwindcss.com) | 3 | Utility-first styling |
+| [shadcn/ui](https://ui.shadcn.com) | latest | Accessible component primitives |
+| [Radix UI](https://www.radix-ui.com) | various | Headless UI components |
+| [React Router](https://reactrouter.com) | 6 | Client-side routing |
+| [Lucide React](https://lucide.dev) | 0.46 | Icon set |
+| [TanStack Query](https://tanstack.com/query) | 5 | Async state management |
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 📁 Project Structure
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+```
+Bankai/
+├── public/                  # Static assets
+│   ├── favicon.ico
+│   ├── robots.txt
+│   └── sitemap.xml
+├── src/
+│   ├── assets/              # Images used in the UI
+│   ├── components/
+│   │   ├── ui/              # shadcn/ui component library
+│   │   ├── Analytics.tsx    # Analytics integration
+│   │   ├── DownloadSection.tsx
+│   │   ├── FAQSection.tsx
+│   │   ├── FeaturesSection.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Header.tsx
+│   │   ├── HeroSection.tsx
+│   │   ├── LazyImage.tsx
+│   │   ├── SEOHead.tsx
+│   │   └── StepsSection.tsx
+│   ├── config/
+│   │   └── seo.ts           # Centralised SEO configuration
+│   ├── hooks/               # Custom React hooks
+│   ├── pages/
+│   │   ├── Index.tsx        # Home page (assembles all sections)
+│   │   └── NotFound.tsx     # 404 page
+│   ├── utils/
+│   │   └── seo.ts           # SEO helpers (structured data generators)
+│   ├── App.tsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.tsx
+├── index.html               # HTML entry point (meta tags, fonts, JSON-LD)
+├── tailwind.config.ts
+├── vite.config.ts
+└── tsconfig.json
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org) ≥ 18 (use [nvm](https://github.com/nvm-sh/nvm) to manage versions)
+- npm ≥ 9 (bundled with Node.js) **or** [Bun](https://bun.sh)
+
+### Installation
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/VedantBhawsar/Bankai.git
+cd Bankai
+
+# 2. Install dependencies
+npm install
+```
+
+### Development
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Opens the app at `http://localhost:8080` with hot-module replacement.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Production Build
 
-**Use GitHub Codespaces**
+```bash
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Output is placed in the `dist/` directory.
 
-## What technologies are used for this project?
+### Preview the Production Build
 
-This project is built with:
+```bash
+npm run preview
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Lint
 
-## How can I deploy this project?
+```bash
+npm run lint
+```
 
-Simply open [Lovable](https://lovable.dev/projects/67bba80b-6ca7-4910-8728-00cdb9e0e21b) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## 📜 Available Scripts
 
-Yes, you can!
+| Script | Description |
+|---|---|
+| `npm run dev` | Start the development server |
+| `npm run build` | Build for production |
+| `npm run build:dev` | Build in development mode |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Run ESLint across the project |
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 📞 Contact
+
+| Channel | Details |
+|---|---|
+| Email | bankai@email.com |
+| Phone | (629) 555-0129 |
+| Twitter | [@bankai_app](https://twitter.com/bankai_app) |
+| Facebook | [facebook.com/bankaiapp](https://facebook.com/bankaiapp) |
+| LinkedIn | [linkedin.com/company/bankai-financial](https://linkedin.com/company/bankai-financial) |
+
+---
+
+## 📄 License
+
+© 2024 Bankai Financial Technologies. All rights reserved.
