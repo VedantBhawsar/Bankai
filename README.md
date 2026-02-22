@@ -145,19 +145,3 @@ npm run lint
 | `npm run lint` | Run ESLint across the project |
 
 ---
-
-## 📞 Contact
-
-| Channel | Details |
-|---|---|
-| Email | bankai@email.com |
-| Phone | (629) 555-0129 |
-| Twitter | [@bankai_app](https://twitter.com/bankai_app) |
-| Facebook | [facebook.com/bankaiapp](https://facebook.com/bankaiapp) |
-| LinkedIn | [linkedin.com/company/bankai-financial](https://linkedin.com/company/bankai-financial) |
-
----
-
-## 📄 License
-
-© 2024 Bankai Financial Technologies. All rights reserved.
